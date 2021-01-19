@@ -38,13 +38,26 @@ public class Main
       });
       //--------------------Label 1---------------------
       JLabel label1 = new JLabel("Count the ducks");
+      JTextField textfield1 = new JTextField(10);
 
       panel1.add(button1);
       panel1.add(button2);
       panel1.add(label1);
+      panel1.add(textfield1);
 
-      frame1.getContentPane().add(panel1);
 
+
+      //------------------Panel 2------------------
+      JPanel panel2 = new JPanel (new BorderLayout(10,10));
+
+
+      //-------------Image 1 - the DUCK-------------
+      ImageIcon duckImage = new ImageIcon("duckwithknife.jpg", "Duck with a knife, what's he gonna do");
+      JLabel duckLabelPic = new JLabel(duckImage);
+      panel2.add(duckLabelPic);
+
+      frame1.getContentPane().add(BorderLayout.NORTH, panel1);
+      frame1.getContentPane().add(BorderLayout.CENTER, panel2);
       
   }//end main method
 }//end class Main
