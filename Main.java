@@ -24,7 +24,6 @@ public class Main
 
       frame1.add(button1);
 
-
       frame1.setVisible(true);
   }//end main method
 }//end class Main
