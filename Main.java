@@ -2,11 +2,12 @@ import javax.swing.*;
 import java.awt.event.*; //this enables the events
 import java.awt.*;
 
+
 public class Main
 {
   public static void main (String args[])
   {
-      JFrame frame1 =new JFrame("This is a JFrame");
+      JFrame frame1 = new JFrame("This is a JFrame");
       frame1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
       //YOU MUST HAVE THIS LINE
       frame1.setSize(500,500);
@@ -35,9 +36,12 @@ public class Main
             System.out.println("Thanks, pal");
         }
       });
+      //--------------------Label 1---------------------
+      JLabel label1 = new JLabel("Count the ducks");
 
       panel1.add(button1);
       panel1.add(button2);
+      panel1.add(label1);
 
       frame1.getContentPane().add(panel1);
 
